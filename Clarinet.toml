@@ -1,12 +1,15 @@
 [project]
 name = "prediction-market"
-description = ""
+description = "A decentralized prediction market smart contract"
 authors = []
 telemetry = true
 cache_dir = "./.cache"
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
+[contracts.prediction-market]
+path = "contracts/prediction-market.clar"
+
+[contracts.user-reputation]
+path = "contracts/user-reputation.clar"
 
 [repl.analysis]
 passes = ["check_checker"]
